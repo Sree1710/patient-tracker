@@ -11,5 +11,7 @@ export class DoctorhomepageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+Dlogin(){
+  
+}
 }

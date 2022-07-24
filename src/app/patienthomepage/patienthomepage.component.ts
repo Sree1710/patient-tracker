@@ -11,5 +11,7 @@ export class PatienthomepageComponent implements OnInit {
 
   ngOnInit(): void {
   }
+ Plogin(){
 
+ }
 }
