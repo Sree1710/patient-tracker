@@ -21,8 +21,8 @@ patient={
 
   Pregister(){
   this.patientservice.Pregister(this.patient).subscribe((data)=>{
-   alert("Success")
+   
   })
-
+  alert("Success")
 }
 }

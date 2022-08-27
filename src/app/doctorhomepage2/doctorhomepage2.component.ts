@@ -9,24 +9,24 @@ import { PatientserviceService } from '../patientservice.service';
 export class Doctorhomepage2Component implements OnInit {
  doctor={
   doctorName:"",
-  registrationNumber:"",
+  doctorRegistrationnumber:"",
   doctorDepartment:"",
-  userName:"",
-  passWord:""
+  doctorUsername:"",
+  doctorPassword:""
  }
   constructor(private patientservice:PatientserviceService) { }
 
   ngOnInit(): void {
-    
-    console.log(this.doctor);
+
   }
   
   
 Dregister()
 {
   this.patientservice.Dregister(this.doctor).subscribe((data)=>{
-   alert("Success")
+   
   })
+  alert("Success")
   
 }
 }

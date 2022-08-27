@@ -8,9 +8,9 @@ export class PatientserviceService {
 
   constructor(private http:HttpClient) { }
   Dregister(doctor:any){
-    return this.http.post<any>("http://localhost:3200/dr",doctor)
+    return this.http.post<any>('http://localhost:3200/dr',doctor)
   }
   Pregister(patient:any){
-    return this.http.post<any>("http://localhost:3200/pr",patient)
+    return this.http.post<any>('http://localhost:3200/pr',patient)
   }
 }
