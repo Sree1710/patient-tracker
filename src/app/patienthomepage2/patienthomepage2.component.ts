@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PatientserviceService } from '../patientservice.service';
 
 @Component({
   selector: 'app-patienthomepage2',
@@ -6,13 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./patienthomepage2.component.css']
 })
 export class Patienthomepage2Component implements OnInit {
-
-  constructor() { }
+patient={
+  patientName:"",
+  patientAge:"",
+  patientphoneNumber:"",
+  username:"",
+  password:""
+}
+  constructor(private patientservice:PatientserviceService) { }
 
   ngOnInit(): void {
   }
-Pregister(){
-console.log()
-alert("Success")
+
+  Pregister(){
+  this.patientservice.Pregister(this.patient).subscribe((data)=>{
+   alert("Success")
+  })
+
 }
 }

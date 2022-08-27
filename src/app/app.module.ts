@@ -11,6 +11,10 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Patienthomepage2Component } from './patienthomepage2/patienthomepage2.component';
 import { Doctorhomepage2Component } from './doctorhomepage2/doctorhomepage2.component';
+import { PatientportalComponent } from './patientportal/patientportal.component';
+import { DoctorportalComponent } from './doctorportal/doctorportal.component';
+import { PortableComponent } from './portable/portable.component';
+import { DoctormainComponent } from './doctormain/doctormain.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { Doctorhomepage2Component } from './doctorhomepage2/doctorhomepage2.comp
     PatienthomepageComponent,
     NavbarComponent,
     Patienthomepage2Component,
-    Doctorhomepage2Component
+    Doctorhomepage2Component,
+    PatientportalComponent,
+    DoctorportalComponent,
+    PortableComponent,
+    DoctormainComponent
   ],
   imports: [
     BrowserModule,
