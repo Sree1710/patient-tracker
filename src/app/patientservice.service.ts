@@ -7,10 +7,18 @@ import { Injectable } from '@angular/core';
 export class PatientserviceService {
 
   constructor(private http:HttpClient) { }
-  Dregister(doctor:any){
-    return this.http.post<any>('http://localhost:3200/dr',doctor)
+  dregister(data:any){
+    return this.http.post<any>('http://localhost:3200/dr',data)
   }
-  Pregister(patient:any){
-    return this.http.post<any>('http://localhost:3200/pr',patient)
+  pregister(dataa:any){
+    return this.http.post<any>('http://localhost:3200/pr',dataa)
+  }
+  docDetail=()=>
+  {
+    return this.http.get('http://localhost:3200/docDetail')
+  }
+  patDetail=()=>
+  {
+    return this.http.get('http://localhost:3200/patDetail')
   }
 }

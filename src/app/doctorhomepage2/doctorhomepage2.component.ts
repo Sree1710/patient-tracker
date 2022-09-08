@@ -7,14 +7,14 @@ import { PatientserviceService } from '../patientservice.service';
   styleUrls: ['./doctorhomepage2.component.css']
 })
 export class Doctorhomepage2Component implements OnInit {
- doctor={
+ data={
   doctorName:"",
   doctorRegistrationnumber:"",
   doctorDepartment:"",
   doctorUsername:"",
   doctorPassword:""
  }
-  constructor(private patientservice:PatientserviceService) { }
+  constructor(private api:PatientserviceService) { }
 
   ngOnInit(): void {
 
@@ -23,7 +23,7 @@ export class Doctorhomepage2Component implements OnInit {
   
 Dregister()
 {
-  this.patientservice.Dregister(this.doctor).subscribe((data)=>{
+  this.api.dregister(this.data).subscribe((data)=>{
    
   })
   alert("Success")

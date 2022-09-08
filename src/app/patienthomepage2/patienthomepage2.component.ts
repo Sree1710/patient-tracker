@@ -7,20 +7,20 @@ import { PatientserviceService } from '../patientservice.service';
   styleUrls: ['./patienthomepage2.component.css']
 })
 export class Patienthomepage2Component implements OnInit {
-patient={
+dataa={
   patientName:"",
   patientAge:"",
-  patientphoneNumber:"",
-  username:"",
-  password:""
+  patientPhonenumber:"",
+  patientUsername:"",
+  patientPassword:""
 }
-  constructor(private patientservice:PatientserviceService) { }
+  constructor(private api:PatientserviceService) { }
 
   ngOnInit(): void {
   }
 
   Pregister(){
-  this.patientservice.Pregister(this.patient).subscribe((data)=>{
+  this.api.pregister(this.dataa).subscribe((data)=>{
    
   })
   alert("Success")

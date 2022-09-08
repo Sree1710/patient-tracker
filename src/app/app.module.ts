@@ -15,6 +15,8 @@ import { PatientportalComponent } from './patientportal/patientportal.component'
 import { DoctorportalComponent } from './doctorportal/doctorportal.component';
 import { PortableComponent } from './portable/portable.component';
 import { DoctormainComponent } from './doctormain/doctormain.component';
+import { PatientmainComponent } from './patientmain/patientmain.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { DoctormainComponent } from './doctormain/doctormain.component';
     PatientportalComponent,
     DoctorportalComponent,
     PortableComponent,
-    DoctormainComponent
+    DoctormainComponent,
+    PatientmainComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

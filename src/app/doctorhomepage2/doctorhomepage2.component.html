@@ -6,11 +6,11 @@
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <h1 align="center">DOCTOR REGISTRATION</h1>
                 <label for="" class="form label">NAME</label>
-                <input type="text" class="form-control" [(ngModel)]="doctor.doctorName" name="doctor name">
+                <input type="text" class="form-control" [(ngModel)]="data.doctorName" name="doctor name">
                 <label for="" class="form label">REGISTRATION NUMBER</label>
-                 <input type="text" class="form-control" [(ngModel)]="doctor.doctorRegistrationnumber" name="registration number">
+                 <input type="text" class="form-control" [(ngModel)]="data.doctorRegistrationnumber" name="registration number">
                 <label for="" class="form label">DEPARTMENT</label>
-                <select name="" id="" class="form-control" [(ngModel)]="doctor.doctorDepartment" name="department">
+                <select name="" id="" class="form-control" [(ngModel)]="data.doctorDepartment" name="department">
                     <option value="SELECT">SELECT</option>
                     <option value="General Medicine">General Medicine</option>
                     <option value="Pediatrics">Pediatrics</option>
@@ -18,10 +18,10 @@
                     <option value="Dermatology">Dermatology</option>
                 </select>
                 <label for="" class="form label">USERNAME</label>
-                <input type="text" class="form-control" [(ngModel)]="doctor.doctorUsername" name="username">
+                <input type="text" class="form-control" [(ngModel)]="data.doctorUsername" name="username">
                 <label for="" class="form label">PASSWORD</label>
-                <input type="password" id="" class="form-control" [(ngModel)]="doctor.doctorPassword" name="password">
-                <br><br><button type="button" class="btn btn-primary">REGISTER</button>
+                <input type="password" id="" class="form-control" [(ngModel)]="data.doctorPassword" name="password">
+                <br><br><button class="btn btn-primary">REGISTER</button>
                 </div>
                 </form>
             </div>
