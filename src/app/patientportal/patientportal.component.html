@@ -1,13 +1,31 @@
+<app-doctormain></app-doctormain>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" align="center">
-        <h1>WELCOME TO PATIENT PORTAL !</h1>
-        </div>
-        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6" align="center">
-        <br><br><br><a routerLink="/pl"><button type="button" class="btn btn-primary">PATIENT LOGIN</button></a><br><br>
-        </div>
-        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6" align="center">
-        <br><br><br><a routerLink="/pr"><button type="button" class="btn btn-primary">PATIENT REGISTRATION</button></a>
-        </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            
+            
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                  <h3 align="center" style="background-color:#75E6DA">PATIENT DETAILS</h3><br><br>
+<table class="table table-striped" >
+    <thead>
+      <tr style="background-color: #189AB4">
+        <th scope="col">PATIENT NAME</th>
+        <th scope="col">AGE</th>
+        <th scope="col">PHONE NUMBER</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let i of dataa">
+        <td><a href="">{{i.patientName}}</a></td>
+        <td>{{i.patientAge}}</td>
+        <td>{{i.patientPhonenumber}}</td>
+      </tr>
+      </tbody>
+      
+  </table>
+  </div>
+    </div>
     </div>
 </div>

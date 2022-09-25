@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PatientserviceService } from '../patientservice.service';
 
 @Component({
   selector: 'app-patientmain',
@@ -8,15 +7,8 @@ import { PatientserviceService } from '../patientservice.service';
 })
 export class PatientmainComponent implements OnInit {
 
-  constructor(private api:PatientserviceService) 
-  {
-    api.docDetail().subscribe(
-      (response=>{
-       this.data=response
-    }))
-   }
+  constructor() {}
 
   ngOnInit(): void {
   }
-data:any=[]
 }

@@ -8,14 +8,11 @@ import { PatientserviceService } from '../patientservice.service';
 })
 export class DoctormainComponent implements OnInit {
 
-  constructor(private api:PatientserviceService) {
-    api.patDetail().subscribe(
-      (response=>{
-       this.data2=response
-    }))
+  constructor() {
+   
    }
 
   ngOnInit(): void {
   }
-data2:any=[]
+
 }

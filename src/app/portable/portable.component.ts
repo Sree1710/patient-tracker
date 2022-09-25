@@ -12,8 +12,5 @@ export class PortableComponent implements OnInit {
   ngOnInit(): void {
   }
 
-Prlogin(){
-  
-}
 
 }

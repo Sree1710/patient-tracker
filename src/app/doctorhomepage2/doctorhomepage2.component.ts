@@ -9,7 +9,6 @@ import { PatientserviceService } from '../patientservice.service';
 export class Doctorhomepage2Component implements OnInit {
  data={
   doctorName:"",
-  doctorRegistrationnumber:"",
   doctorDepartment:"",
   doctorUsername:"",
   doctorPassword:""
@@ -26,7 +25,7 @@ Dregister()
   this.api.dregister(this.data).subscribe((data)=>{
    
   })
-  alert("Success")
+  
   
 }
 }

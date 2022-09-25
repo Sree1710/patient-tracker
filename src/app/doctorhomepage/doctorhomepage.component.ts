@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { PatientserviceService } from '../patientservice.service';
 
 @Component({
   selector: 'app-doctorhomepage',
@@ -6,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./doctorhomepage.component.css']
 })
 export class DoctorhomepageComponent implements OnInit {
-
-  constructor() { }
+ 
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
   }
+
+
+  
 }

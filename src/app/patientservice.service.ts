@@ -13,6 +13,12 @@ export class PatientserviceService {
   pregister(dataa:any){
     return this.http.post<any>('http://localhost:3200/pr',dataa)
   }
+  dlogin(data3:any){
+    return this.http.post<any>('http://localhost:3200/dl',data3)
+  }
+  bapp(data4:any){
+    return this.http.post<any>('http://localhost:3200/bp',data4)
+  }
   docDetail=()=>
   {
     return this.http.get('http://localhost:3200/docDetail')
@@ -20,5 +26,13 @@ export class PatientserviceService {
   patDetail=()=>
   {
     return this.http.get('http://localhost:3200/patDetail')
+  }
+  DocDetail=()=>
+  {
+    return this.http.get('http://localhost:3200/DocDetail')
+  }
+  viewApp=()=>
+  {
+    return this.http.get('http://localhost:3200/viewApp')
   }
 }

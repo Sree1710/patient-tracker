@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DoctorhomepageComponent } from './doctorhomepage/doctorhomepage.component';
 import { PatienthomepageComponent } from './patienthomepage/patienthomepage.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Patienthomepage2Component } from './patienthomepage2/patienthomepage2.component';
@@ -17,6 +17,10 @@ import { PortableComponent } from './portable/portable.component';
 import { DoctormainComponent } from './doctormain/doctormain.component';
 import { PatientmainComponent } from './patientmain/patientmain.component';
 import { AdminComponent } from './admin/admin.component';
+import { Admin1Component } from './admin1/admin1.component';
+import { Admin2Component } from './admin2/admin2.component';
+import { BookappointmentComponent } from './bookappointment/bookappointment.component';
+import { ViewappointmentComponent } from './viewappointment/viewappointment.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { AdminComponent } from './admin/admin.component';
     PortableComponent,
     DoctormainComponent,
     PatientmainComponent,
-    AdminComponent
+    AdminComponent,
+    Admin1Component,
+    Admin2Component,
+    BookappointmentComponent,
+    ViewappointmentComponent
   ],
   imports: [
     BrowserModule,

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { PatientserviceService } from '../patientservice.service';
 
 @Component({
-  selector: 'app-doctorportal',
-  templateUrl: './doctorportal.component.html',
-  styleUrls: ['./doctorportal.component.css']
+  selector: 'app-admin2',
+  templateUrl: './admin2.component.html',
+  styleUrls: ['./admin2.component.css']
 })
-export class DoctorportalComponent implements OnInit {
+export class Admin2Component implements OnInit {
 
   constructor(private api:PatientserviceService) {
     api.docDetail().subscribe(
@@ -17,5 +17,5 @@ export class DoctorportalComponent implements OnInit {
 
   ngOnInit(): void {
   }
-data:any=[]
+  data:any=[]
 }

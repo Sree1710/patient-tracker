@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminComponent } from './admin/admin.component';
+import { Admin1Component } from './admin1/admin1.component';
+import { Admin2Component } from './admin2/admin2.component';
+import { BookappointmentComponent } from './bookappointment/bookappointment.component';
 import { DoctorhomepageComponent } from './doctorhomepage/doctorhomepage.component';
 import { Doctorhomepage2Component } from './doctorhomepage2/doctorhomepage2.component';
 import { DoctormainComponent } from './doctormain/doctormain.component';
@@ -10,6 +14,7 @@ import { Patienthomepage2Component } from './patienthomepage2/patienthomepage2.c
 import { PatientmainComponent } from './patientmain/patientmain.component';
 import { PatientportalComponent } from './patientportal/patientportal.component';
 import { PortableComponent } from './portable/portable.component';
+import { ViewappointmentComponent } from './viewappointment/viewappointment.component';
 
 const routes: Routes = [{path:"",component:HomeComponent},
 {path:'p',component:PatientportalComponent},
@@ -18,9 +23,14 @@ const routes: Routes = [{path:"",component:HomeComponent},
 {path:'pr',component:Patienthomepage2Component},
 {path:'dl',component:DoctorhomepageComponent},
 {path:'dr',component:Doctorhomepage2Component},
-{path:'dp',component:PortableComponent},
+{path:'log',component:PortableComponent},
 {path:'pm',component:PatientmainComponent},
-{path:'dm',component:DoctormainComponent}];
+{path:'dm',component:DoctormainComponent},
+{path:'admin',component:AdminComponent},
+{path:'admin1',component:Admin1Component},
+{path:'admin2',component:Admin2Component},
+{path:'bp',component:BookappointmentComponent},
+{path:'va',component:ViewappointmentComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

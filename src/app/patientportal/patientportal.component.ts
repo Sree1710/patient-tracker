@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PatientserviceService } from '../patientservice.service';
 
 @Component({
   selector: 'app-patientportal',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PatientportalComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api:PatientserviceService) {
+    api.patDetail().subscribe(
+      (response=>{
+       this.dataa=response
+    }))
+   }
 
   ngOnInit(): void {
   }
-
+dataa:any=[]
 }

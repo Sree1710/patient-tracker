@@ -23,6 +23,6 @@ dataa={
   this.api.pregister(this.dataa).subscribe((data)=>{
    
   })
-  alert("Success")
+  
 }
 }
