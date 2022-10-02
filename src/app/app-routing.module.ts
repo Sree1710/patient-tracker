@@ -14,6 +14,7 @@ import { Patienthomepage2Component } from './patienthomepage2/patienthomepage2.c
 import { PatientmainComponent } from './patientmain/patientmain.component';
 import { PatientportalComponent } from './patientportal/patientportal.component';
 import { PortableComponent } from './portable/portable.component';
+import { ViewadminComponent } from './viewadmin/viewadmin.component';
 import { ViewappointmentComponent } from './viewappointment/viewappointment.component';
 
 const routes: Routes = [{path:"",component:HomeComponent},
@@ -30,7 +31,8 @@ const routes: Routes = [{path:"",component:HomeComponent},
 {path:'admin1',component:Admin1Component},
 {path:'admin2',component:Admin2Component},
 {path:'bp',component:BookappointmentComponent},
-{path:'va',component:ViewappointmentComponent}];
+{path:'va',component:ViewappointmentComponent},
+{path:'vad',component:ViewadminComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

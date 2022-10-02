@@ -21,6 +21,7 @@ import { Admin1Component } from './admin1/admin1.component';
 import { Admin2Component } from './admin2/admin2.component';
 import { BookappointmentComponent } from './bookappointment/bookappointment.component';
 import { ViewappointmentComponent } from './viewappointment/viewappointment.component';
+import { ViewadminComponent } from './viewadmin/viewadmin.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ViewappointmentComponent } from './viewappointment/viewappointment.comp
     Admin1Component,
     Admin2Component,
     BookappointmentComponent,
-    ViewappointmentComponent
+    ViewappointmentComponent,
+    ViewadminComponent
   ],
   imports: [
     BrowserModule,

@@ -19,9 +19,25 @@
                 <input type="text" class="form-control" [(ngModel)]="data.doctorUsername" name="username">
                 <label for="" class="form label">PASSWORD</label>
                 <input type="password" id="" class="form-control" [(ngModel)]="data.doctorPassword" name="password">
-                <br><br><button class="btn btn-primary">REGISTER</button>
+                <br><br><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">REGISTER</button>
                 </div>
                 </form>
+                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">STATUS</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          DOCTOR SUCCESSFULLY REGISTERED.
+                        </div>
+                        <div class="modal-footer">
+                          <a routerLink="/dl"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">GO TO LOGIN PAGE</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>

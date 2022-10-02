@@ -35,4 +35,8 @@ export class PatientserviceService {
   {
     return this.http.get('http://localhost:3200/viewApp')
   }
+  ViewApp=()=>
+  {
+    return this.http.get('http://localhost:3200/ViewApp')
+  }
 }

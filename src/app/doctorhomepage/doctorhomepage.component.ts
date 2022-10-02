@@ -9,13 +9,13 @@ import { PatientserviceService } from '../patientservice.service';
 })
 export class DoctorhomepageComponent implements OnInit {
  
-  constructor() { 
-    
-  }
+  constructor(private api:PatientserviceService) { }
 
   ngOnInit(): void {
   }
 
-
+  Dlogin() {
+    // this.api.dlogin()
+  }
   
 }
